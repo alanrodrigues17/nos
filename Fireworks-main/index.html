@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon code -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" type="text/css" href="fireworks.css" />
+
+    <!-- defer loads html first then JS -->
+    <script defer type="text/javascript" src="fireworks.js"></script>
+
+    <title>Fireworks</title>
+</head>
+
+<body>
+
+     <canvas id="canvas">
+
+
+
+    </canvas> 
+    <!-- <div class="box">
+        <p>Cuzinho hoje?</p>
+        <div class="buttons-container">
+            <button onclick="myFunction()">
+                Sim
+            </button>
+            <button id="no">Não</button>
+        </div>
+    </div> -->
+</body>
+
+<script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+
+
+    button.addEventListener('mouseover', () => {
+        button.style.position = "absolute";
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+
+    function myFunction() {
+       alert("Muito feliz")
+       
+
+    }
+</script>
+
+</html>
